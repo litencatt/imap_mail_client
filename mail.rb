@@ -9,7 +9,7 @@ Dotenv.load
 # IMAP接続設定
 imap_host   = ENV['IMAP_HOST'] # imapをgmailのhostに設定する
 imap_port   = ENV['IMAP_PORT'] # ssl有効なら993、そうでなければ143
-imap_usessl = ENV['IMAP_SSL']  # imapのsslを有効にする
+imap_usessl = false  # imapのsslを有効にする
 imap = Net::IMAP.new(imap_host, imap_port, imap_usessl)
 
 # IMAPへログイン

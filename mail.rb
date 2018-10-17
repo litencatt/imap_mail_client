@@ -26,8 +26,8 @@ ids = imap.search(['ALL']) # 全てのメールを取得
 
 # メールデータをfetchして本文を出力
 data = imap.fetch(ids.first, "RFC822")
-meil = Mail.new(data[0].attr["RFC822"])
-puts meil.text_part.decoded
+mail = Mail.new(data[0].attr["RFC822"])
+puts mail.text_part.decoded
 
 imap.close
 

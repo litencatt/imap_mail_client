@@ -1,9 +1,6 @@
-require 'bundler/setup'
 require 'net/imap'
-require 'kconv'
-require 'mail'
-require 'pry-byebug'
-require 'dotenv'
+require 'bundler/setup'
+Bundler.require
 Dotenv.load
 
 # IMAP接続設定

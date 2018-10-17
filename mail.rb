@@ -9,7 +9,7 @@ Dotenv.load
 # IMAP接続設定
 imap_host   = ENV['IMAP_HOST']
 imap_port   = ENV['IMAP_PORT']
-imap_usessl = false
+imap_usessl = true
 imap = Net::IMAP.new(imap_host, imap_port, imap_usessl)
 
 # IMAPへログイン
